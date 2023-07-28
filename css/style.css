@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+:root {
+    --main-font: 'Cairo', sans-serif;
+    --white-color: #ffffff;
+    --header-color: #121318;
+    --background-color: #181A23;
+    --box-bg-color: #1F2029;
+    --line-color: #292A33;
+    --font-secondary-color: #D3D3D3;
+    --yello-color: #FFD764;
+    --green-color: #6FC476;
+    --red-color: #FF7067;
+    --marque-box: #353743;
+}
+
+html {
+    overflow-x: hidden !important;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--main-font) !important;
+    background-color: var(--background-color);
+}
+
+.container-fluid {
+    width: 93% !important;
+}
+
+.header {
+    background-color: var(--header-color);
+    min-height: 105px;
+    width: 100%;
+}
+
+.logo img {
+    width: 260px;
+}
+
+.btn-currency-change {
+    padding: 0px !important;
+    outline: none !important;
+    color: var(--white-color);
+    float: right;
+    font-size: 20px;
+}
+
+.content-box {
+    border-radius: 18px;
+    background: var(--box-bg-color);
+    width: 100%;
+    min-height: 200px;
+    margin-top: 30px;
+}
+
+.head-area {
+    border-bottom: 1px solid var(--line-color);
+    padding: 15px 0px;
+}
+
+.head-area h2 {
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.low-text {
+    width: 60px;
+    height: 35px;
+    background-color: var(--red-color);
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.low-text p {
+    color: var(--white-color);
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.price-box h2 {
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.price-box h2 span {
+    font-size: 12px;
+}
+
+.price-counting {
+    width: 100%;
+    height: 57px;
+    background-color: var(--yello-color);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 11px;
+}
+
+.price-counting h3 {
+    margin-bottom: 0px;
+    color: var(--background-color);
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.low-price {
+    min-width: 100px;
+    height: 35px;
+    background: var(--white-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.low-price p {
+    color: var(--box-bg-color);
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.low-box {
+    margin-top: 12px;
+}
+
+.area-spaces {
+    margin: 20px 20px 30px;
+}
+
+.box-right-line {
+    border-right: 1px solid var(--line-color);
+}
+
+.green-add {
+    background-color: var(--green-color);
+}
+
+.content-price-table {
+    background-color: var(--box-bg-color);
+    width: 100%;
+    min-height: 300px;
+    margin-top: 25px;
+    padding: 10px 30px 20px;
+    border-radius: 18px;
+}
+
+.bg-color-desable {
+    background: none !important;
+}
+
+.owl-box {
+    margin-top: 30px;
+}
+
+.owl-theme .owl-nav {
+    display: none;
+}
+
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: 9px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--yello-color);
+}
+
+.date-box .date {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: right;
+    margin-bottom: -7px;
+}
+
+.date-box .date#printDate {
+    color: #D3D3D3;
+    font-size: 29px;
+    font-weight: 500;
+}
+
+.date-box .date#printDay {
+    color: #D3D3D3;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+
+.date-box .date#printTime {
+    color: var(--white-color);
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: -10px;
+}
+
+.owl-carousel .owl-item img {
+    border-radius: 13px;
+}
+
+
+/* table */
+
+.table-price {
+    width: 100%;
+}
+
+.table-price thead {
+    background-color: var(--box-bg-color);
+    color: var(--white-color);
+    font-size: 26px;
+}
+
+.box-table-price {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+.box-table-price td {
+    padding: 15px 0px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.gold-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 8px;
+    margin-left: 15px;
+}
+
+.marque-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.marque-head {
+    width: 10%;
+    height: 70px;
+    background-image: url(../images/arrow.svg);
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center right;
+}
+
+.marque-content {
+    width: 90%;
+    height: 70px;
+    background-color: var(--marque-box);
+    float: left;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.marque-content div {
+    display: block;
+    width: 200%;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 30s linear infinite;
+}
+
+.marque-content span {
+    float: left;
+    width: 35%;
+    font-size: 24px;
+    color: var(--white-color);
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.marque-head h2 {
+    color: var(--white-color);
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.btn-currency-change .btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:focus-within,
+ :not(.btn-check)+.btn:active {
+    color: var(--white-color) !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.btn-currency-change:hover {
+    color: var(--yello-color);
+}
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+.mobile-view {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.mobile-view img {
+    width: 180px;
+    margin: 0px auto;
+    display: block;
+}
+
+.mobile-view h2 {
+    color: var(--white-color);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.copy-right {
+    font-size: 14px;
+    color: #656565;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+.copy-right a {
+    text-decoration: none;
+    color: #656565 !important;
+}

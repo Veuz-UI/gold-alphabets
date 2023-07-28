@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/fav.webp" rel="icon" />
+    <title>Alphabets</title>
+    <link rel="stylesheet" href="css/icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="images/fav.webp" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+</head>
+
+<body>
+    <!-- Desktop view -->
+    <div class="desktop-view d-none d-lg-block">
+        <div class="header  d-flex align-items-center">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-lg-4 logo">
+                        <img src="images/logo.svg">
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="dropdown">
+                            <a class="btn btn-currency-change dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        AED
+                        </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="content-box">
+                            <div class="row gx-0">
+                                <div class="col-lg-6 box-right-line">
+                                    <div class="head-area">
+                                        <h2>Gold Spot Rate</h2>
+                                    </div>
+                                    <div class="row area-spaces">
+                                        <div class="col-lg-6">
+                                            <div class="price-box">
+                                                <h2>Buy <span>oz</span></h2>
+                                                <div class="price-counting " id="buyOzColor" data-id="1">
+                                                    <h3 class="ounceValue">1800.13</h3>
+                                                </div>
+                                                <div class="low-box d-flex align-items-center justify-content-center">
+                                                    <div class="low-text">
+                                                        <p>Low</p>
+                                                    </div>
+                                                    <div class="low-price">
+                                                        <p>1813.06</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="price-box">
+                                                <h2>Sell <span>oz</span></h2>
+                                                <div class="price-counting green-add " id="sellOzColor" data-content="2">
+                                                    <h3 class="sellOunceValue">1800.13</h3>
+                                                </div>
+                                                <div class="low-box d-flex align-items-center justify-content-center">
+                                                    <div class="low-text green-add">
+                                                        <p>High</p>
+                                                    </div>
+                                                    <div class="low-price">
+                                                        <p>1813.06</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="head-area">
+                                        <h2>Silver Spot Rate</h2>
+                                    </div>
+                                    <div class="row area-spaces">
+                                        <div class="col-lg-6">
+                                            <div class="price-box">
+                                                <h2>Buy <span>oz</span></h2>
+                                                <div class="price-counting" id="silverBuyOzColor">
+                                                    <h3 class="sell-oz7">1800.13</h3>
+                                                </div>
+                                                <div class="low-box d-flex align-items-center justify-content-center" data-content="3">
+                                                    <div class="low-text">
+                                                        <p>Low</p>
+                                                    </div>
+                                                    <div class="low-price">
+                                                        <p>1813.06</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="price-box">
+                                                <h2>Sell <span>oz</span></h2>
+                                                <div class="price-counting green-add" id="silverSellOzColor">
+                                                    <h3 class="sell-oz8">1800.13</h3>
+                                                </div>
+                                                <div class="low-box d-flex align-items-center justify-content-center" data-content="4">
+                                                    <div class="low-text green-add">
+                                                        <p>High</p>
+                                                    </div>
+                                                    <div class="low-price">
+                                                        <p>1813.06</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="content-price-table">
+
+                            <table class="table-price">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Commodity</th>
+                                        <th scope="col">Weight</th>
+                                        <th scope="col">Sell AED</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="box-table-price">
+                                        <td><img src="images/gold-icon.svg" class="img-fluid gold-icon">Gold Ten Tola</td>
+                                        <td>1 GM</td>
+                                        <td class="sell_aed sell_aed0">1</td>
+                                    </tr>
+                                    <tr class="box-table-price">
+                                        <td><img src="images/gold-icon.svg" class="img-fluid gold-icon">Gold 995</td>
+                                        <td>1 GM</td>
+                                        <td class="sell_aed sell_aed1">7</td>
+                                    </tr>
+                                    <tr class="box-table-price">
+                                        <td><img src="images/gold-icon.svg" class="img-fluid gold-icon">Gold 9999</td>
+                                        <td>1 GM</td>
+                                        <td class="sell_aed sell_aed2">5</td>
+                                    </tr>
+                                    <tr class="box-table-price">
+                                        <td><img src="images/gold-icon.svg" class="img-fluid gold-icon">Gold 99</td>
+                                        <td>1 GM</td>
+                                        <td class="sell_aed sell_aed3">4</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="owl-box">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <img src="images/banner2.jpg" class="img-fluid">
+                                </div>
+                                <div class="item">
+                                    <img src="images/banner.png" class="img-fluid">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-end">
+                            <div class="col-lg-6">
+                                <p class="copy-right">
+                                    Powered by<br> <a href="//www.veuzconcepts.com/">www.veuzconcepts.com</a>
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="date-box">
+                                    <div class="date" id="printTime"></div>
+                                    <div class="date" id="printDate"></div>
+                                    <div class="date" id="printDay"></div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="marque-box">
+            <div class="row">
+                <div class="marque-head">
+                    <h2>Updates</h2>
+                </div>
+                <div class="marque-content">
+                    <div>
+                        <span>Gold News. Gold rate Gold price in India, Go Know the latest Gold News Gold rate Gold price in India, Go Know the latest Gold News Gold News.</span>
+                        <span>Gold News. Gold rate Gold price in India, Go Know the latest Gold News Gold rate Gold price in India, Go Know the latest Gold News Gold News.</span>
+                        <span>Gold News. Gold rate Gold price in India, Go Know the latest Gold News Gold rate Gold price in India, Go Know the latest Gold News Gold News.</span>
+                        <span>Gold News. Gold rate Gold price in India, Go Know the latest Gold News Gold rate Gold price in India, Go Know the latest Gold News Gold News.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile view -->
+    <div class="mobile-view d-sm-block d-lg-none">
+        <img src="images/empty.svg" class="img-fluid">
+        <h2>Mobile preview not available,<br> please open in TV, Desktop or Web browser</h2>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js " integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js " integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="js/script.js "></script>
+    <script src="https://kit.fontawesome.com/49ccdaea81.js " crossorigin="anonymous "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: false,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+    <!-- time  -->
+    <script>
+        var date = new Date();
+        const elementDate = document.getElementById("printDate");
+        const elementDay = document.getElementById("printDay");
+        const elementTime = document.getElementById("printTime");
+        const listOfDays = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ];
+
+        function printDate() {
+            var day = date.getDate();
+            var month = date.getMonth();
+            var year = date.getFullYear();
+
+            elementDate.innerHTML = day + " / " + month + " / " + year;
+        }
+
+        function printDay() {
+            date = new Date();
+            var numberOfDay = date.getDay();
+            var day = listOfDays[numberOfDay];
+            elementDay.innerHTML = day;
+        }
+
+        function printTime() {
+            date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (hours > 12) {
+                hours = hours - 12;
+                elementTime.innerHTML = hours + " : " + minutes + " : " + seconds + "  PM ";
+            } else if (hours < 12) {
+                elementTime.innerHTML = hours + " : " + minutes + " : " + seconds + "  AM ";
+            } else if (hours = 12) {
+                elementTime.innerHTML = hours + " : " + minutes + " : " + seconds + "  PM ";
+            }
+        }
+
+        setInterval(function() {
+            printTime();
+            printDate();
+            printDay();
+        }, 1000);
+    </script>
+
+    <!-- time end  -->
+    <!-- amount change  -->
+    <!-- amount change  -->
+    <script>
+        $(document).ready(function($q) {
+                streamchange();
+            })
+            // var dataSet = $('.buyOzColor').data('id');
+            // if (dataSet == 1) {
+            //     setTimeout(function() {
+            //         $('.buyOzColor').addClass('color-1')
+            //         $('.buyOzColor').attr('data-id', '12');
+            //     }, 1000);
+            // }
+
+        // if (dataSet == 12) {
+        //     alert('ff');
+        //     setTimeout(function() {
+        //         $('.buyOzColor').addClass('color-2')
+        //         $('.buyOzColor').attr('data-id', '1');
+        //     }, 1000);
+        // }
+        // console.log('ss', dataSet);
+        // onclick modal 
+        $(document).on('click', '#scrpModalForm', function($q) {
+                $('#scrpModal').modal('show');
+            })
+            // real time response
+        var oneOunce = 0;
+        var latestValue = 0;
+        var oneUsdToAed = 0;
+        var uniValue = 0;
+        let ounceAmount = 0;
+        var tdBuyValueArray = 0;
+        var streamJson = [{
+            "id": "1",
+            "value": 239.34
+        }, {
+            "id": "2",
+            "value": 820.14
+        }, {
+            "id": "3",
+            "value": 926.03
+        }, {
+            "id": "4",
+            "value": 513.01
+        }, {
+            "id": "5",
+            "value": 13.81
+        }, {
+            "id": "6",
+            "value": 465.28
+        }, {
+            "id": "7",
+            "value": 71.95
+        }, {
+            "id": "8",
+            "value": 239.34
+        }, {
+            "id": "9",
+            "value": 820.14
+        }, {
+            "id": "10",
+            "value": 926.03
+        }, {
+            "id": "11",
+            "value": 513.01
+        }, {
+            "id": "12",
+            "value": 13.81
+        }, {
+            "id": "13",
+            "value": 465.28
+        }, {
+            "id": "14",
+            "value": 71.95
+        }, {
+            "id": "15",
+            "value": 239.34
+        }, {
+            "id": "16",
+            "value": 820.14
+        }, {
+            "id": "17",
+            "value": 926.03
+        }, {
+            "id": "18",
+            "value": 513.01
+        }, {
+            "id": "19",
+            "value": 13.81
+        }, {
+            "id": "20",
+            "value": 465.28
+        }, {
+            "id": "21",
+            "value": 71.95
+        }, {
+            "id": "22",
+            "value": 239.34
+        }, {
+            "id": "23",
+            "value": 820.14
+        }, {
+            "id": "24",
+            "value": 926.03
+        }, {
+            "id": "25",
+            "value": 513.01
+        }, {
+            "id": "26",
+            "value": 13.81
+        }, {
+            "id": "27",
+            "value": 465.28
+        }, {
+            "id": "28",
+            "value": 71.95
+        }, {
+            "id": "29",
+            "value": 239.34
+        }, {
+            "id": "30",
+            "value": 820.14
+        }, {
+            "id": "31",
+            "value": 926.03
+        }, {
+            "id": "32",
+            "value": 513.01
+        }, {
+            "id": "33",
+            "value": 13.81
+        }, {
+            "id": "34",
+            "value": 465.28
+        }, {
+            "id": "35",
+            "value": 71.95
+        }];
+        var color = ["#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476",
+            "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476",
+            "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476",
+            "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476",
+            "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476",
+            "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476",
+            "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476",
+            "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476",
+            "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476",
+            "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476", "#F5574D", "#6FC476",
+        ];
+        var buyOzColor = document.getElementById("buyOzColor");
+        var sellOzColor = document.getElementById("sellOzColor");
+        var silverBuyOzColor = document.getElementById("silverBuyOzColor");
+        var silverSellOzColor = document.getElementById("silverSellOzColor");
+
+        streamJson = shuffle(streamJson);
+
+        function shuffle(array) {
+            let currentIndex = array.length,
+                randomIndex;
+
+            // While there remain elements to shuffle.
+            while (currentIndex != 0) {
+
+                // Pick a remaining element.
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+                // And swap it with the current element.
+                [array[currentIndex], array[randomIndex]] = [
+                    array[randomIndex], array[currentIndex]
+                ];
+            }
+
+            return array;
+        }
+
+        function streamchange() {
+            $.each(streamJson, function(i, item) {
+                setTimeout(function() {
+                    this.ounceAmount = item;
+                    // get td data buy rate value and update with ounce value 
+                    // td buy rate 
+                    var tdBuyValueArray = $(".sell_aed")
+                        .map(function() {
+                            return parseFloat($(this).html());
+                        }).get();
+                    tdBuyValueArray.forEach((num, index) => {
+                        tdBuyValueArray[index] = num + this.ounceAmount.value;
+                    });
+                    // td sell rate 
+                    var tdSellValueArray = $("input[name='sell-rate[]']")
+                        .map(function() {
+                            return parseFloat($(this).val());
+                        }).get();
+                    tdSellValueArray.forEach((numSell, indexSell) => {
+                        tdSellValueArray[indexSell] = numSell + this.ounceAmount.value;
+                    });
+                    console.log('incc', tdBuyValueArray);
+                    getOunceValue(this.ounceAmount, tdBuyValueArray, i, tdSellValueArray);
+                    buyOzColor.style.backgroundColor = color[i]
+                    sellOzColor.style.backgroundColor = color[i]
+                    silverBuyOzColor.style.backgroundColor = color[i]
+                    silverSellOzColor.style.backgroundColor = color[i]
+                        // streamchange()
+
+                }, i * 1000);
+            })
+
+        }
+        var buyRateTdValues =
+            //select symbol 
+            $(document).on('change', '.symbol', function() {
+                var value = $(this).val();
+                $.ajax({
+                    method: "get",
+                    data: {
+                        value
+                    },
+                    url: "/" + "symbol-data",
+                    success: function(result) {
+                        uniValue = result.data.unit_value;
+                        calculation();
+                    },
+                    error: function(data) {}
+                })
+            })
+
+        //    calculation value  
+        function getOunceValue(streamValueOunce, tdBuyValueArray, i, tdSellValueArray) {
+            oneOunce = streamValueOunce.value;
+            $('.ounceValue').html(oneOunce)
+            $('.sellOunceValue').html(oneOunce)
+                // fetch td buy array 
+            tdBuyValueArray.forEach((numNew, indexNew) => {
+                var numNew = parseFloat(numNew).toFixed(2);
+
+                $('.sell-oz6').html(numNew);
+                $('.sell-oz7').html(numNew + "2");
+                $('.sell-oz8').html(numNew + "1");
+                $(".sell_aed" + indexNew).html(numNew);
+
+            });
+            // fetch td sell array 
+            // tdSellValueArray.forEach((numNewSell, indexNewSell) => {
+            //     var numNewSell = parseFloat(numNewSell).toFixed(2);
+            //     $(".sell-rate" + indexNewSell).val(numNewSell);
+            // });
+            calculation()
+        }
+
+        function calculation() {
+            console.log('late', oneOunce);
+            oneUsdToAed = 3.67;
+            var ounceGram = 28.34952;
+            var usdAmount = oneOunce / ounceGram;
+            var aedAmount = usdAmount * oneUsdToAed;
+            var finalAmpunt = uniValue * aedAmount;
+            $('.finalAmount').val(finalAmpunt);
+
+            // buy rate calculation
+
+        }
+    </script>
+
+</body>
+
+</html>
